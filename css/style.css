@@ -1,0 +1,66 @@
+*{
+    font-family: "Helvetica";
+}
+
+.background_clouds{
+    background-color: #ecf0f1;
+}
+
+.fixed_top{
+    top:0;
+    position: fixed;
+    z-index: 10000;
+}
+
+#navigation{
+   /*height: 35px;*/
+}
+
+#header{
+    text-align: center;
+}
+
+#header > h1{
+    font-weight: bolder;
+}
+
+#main{
+    text-align: center;
+}
+
+#contentwrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#content{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.menu_selected{
+    background-color: #eee;
+}
+
+.pure-menu a{
+    border: none;
+}
+
+.reveal{
+    background-color: #bdc3c7;
+}
+
+.pure-menu li{
+    margin-right: -5px;
+}
+
+#revealwrapper{
+    height: 400px;
+    width: inherit;
+}
+
+.slidesectionleft{
+    text-align: left;
+}
