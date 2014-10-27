@@ -7,6 +7,8 @@
     <title>Zeichnen – von analog zu digital</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
     <![endif]-->
@@ -30,14 +32,59 @@
           </header>
           <div id="contentwrapper">
             <div id="content">
-                This will be content!
+                <div id="revealwrapper">
+                    <div class="reveal">
+                        <div class="slides">
+                            <section>
+                                <img class="" src="media/test_snk.jpg"/>
+                                <div class="slidesectionright">
+                                    <p>Papier, obviously!</p>
+                                    <p>Das Papier ist deine Zeichenwelt in der du deiner Fantasie freien Lauf lassen kannst!</p>
+                                    
+                                </div>
+                                
+                            </section>
+                            
+                            <section>
+                                <div class="slidesectionleft">
+                                    <p>Stift, obviously!</p>
+                                    <p>Mit dem Stift bringst du deine Ideen zu Papier!</p>
+                                </div>
+                                
+                                <div class="slidesectionright">
+                                    <p>right2</p>
+                                </div>
+                            </section>
+                           
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
       </div>
       
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">         </script>
+    <script src="js/reveal.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+        Reveal.initialize({
+            controls: false,
+            progress: false,
+            embedded: true,
+            center: true,
+            minScale: 1.0,
+            maxScale: 1.0,
+            autoSlide: 3000,
+            autoSlideStoppable: false,
+            margin: 0,
+            width: "100%",
+            loop: true,
+            touch: true
+ 
+            
+        });  
+    </script>
 
   </body>
 </html>

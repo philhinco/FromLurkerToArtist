@@ -58,9 +58,43 @@
 
 #revealwrapper{
     height: 400px;
-    width: inherit;
+    width: 100%;
+   
 }
 
 .slidesectionleft{
     text-align: left;
+    width: 60%;
+    float: left;
+    padding: 10px;
+}
+
+.slidesectionright{
+    width: 40%;
+    float: right;
+}
+
+.slidesectionright > img{
+    height: 400px;
+    width: auto;
+}
+
+section.peresent{
+    padding: 10px;
+}
+
+
+section.present  > img{
+    max-height: 350px;
+    width: auto;
+    float: left;
+    max-width: 50%;
+}
+#video{
+    margin: 0 auto 0 auto;
+    width: 900px;
+}
+
+#contenttext{
+    margin-top: 20px;
 }

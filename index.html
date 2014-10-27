@@ -13,6 +13,7 @@
       <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
       <!--<![endif]-->
+            <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
   </head>
   <body class="background_clouds">
       <nav role="navigation" id="navigation" class="pure-menu pure-menu-open pure-menu-horizontal">
@@ -30,14 +31,42 @@
           </header>
           <div id="contentwrapper">
             <div id="content">
-                This will be content!
+                <div id="video">
+                    <iframe id="introplayer" src="http://player.vimeo.com/video/106529001?api=1&player_id=introplayer&byline=0&portrait=0&color=ffffff" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                
+                <section id="contenttext">
+                    <p>
+                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </section>
             </div>
           </div>
       </div>
       
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">         </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+      
+      <script>
+        $(function() {
+            var content = $("#contenttext");
+            content.hide();
+           
+            var iframe = $('#introplayer')[0];
+            var player = $f(iframe);
+            var vidcontainer = $("#introplayer");
+   
+            player.addEvent('ready', function() {
+                player.addEvent('finish', onFinish);
+            });
+
+            function onFinish(id) {
+                vidcontainer.fadeOut();
+                content.fadeIn();
+            }
+        });
+      </script>
 
   </body>
 </html>
