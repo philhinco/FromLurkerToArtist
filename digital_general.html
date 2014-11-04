@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zeichnen – von analog zu digital</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/reveal.min.css">
+      <link rel="stylesheet" href="css/style.css">
     
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
@@ -38,22 +39,40 @@
                             <section>
                                 <img class="" src="media/test_snk.jpg"/>
                                 <div class="slidesectionright">
-                                    <p>Papier, obviously!</p>
-                                    <p>Das Papier ist deine Zeichenwelt in der du deiner Fantasie freien Lauf lassen kannst!</p>
+                                    <p class="title">Zeichenprogramm</p>
+                                    <p>
+                                        Um auf einem Computer zu zeichnen brauchst du ein Zeichenprogramm. Oftmals reicht leider das vorinstalliere Zeichenprogramm auf dem Computer nicht.
+                                    </p>
+                                    <p>
+                                        Weit verbreitete Programme welche zum Zeichnen auf dem Computer benutzt werden sind Photoshop, Paint Tool SAI (nur Windows), Corel Painter, uvm.
+                                    </p>
+                                    
+                                    <p>
+                                        Alle erwähnten Programme sind für eine Probezeit herunterladbar und benutzbar. Lade möglichst viele herunter um daraus nach vielem Ausprobieren deinen Favoriten auszuwählen.
+                                    </p>
                                     
                                 </div>
                                 
                             </section>
                             
                             <section>
-                                <div class="slidesectionleft">
-                                    <p>Stift, obviously!</p>
-                                    <p>Mit dem Stift bringst du deine Ideen zu Papier!</p>
+                                <img class="" src="media/tablet.JPG"/>
+                                <div class="slidesectionright">
+                                    <p class="title">Grafiktablett</p>
+                                    <p>
+                                        Dies ist am Anfang vielleicht noch kein Muss. Man kann auch mit der Maus zeichnen, jedoch fühlt es sich mit einem Grafiktablett und Stift natürlicher an.
+                                    </p>
+                                    <p>
+                                        Es muss nicht ein professionelles sein. Ein einfaches reicht schon. Jedoch musst du mit einer Investition von mindestens 100 CHF rechnen.
+                                    </p>
+                                    
+                                    <p>
+                                        Versuche nicht am Anfang schon ein Meisterwerk zeichnen zu wollen. Es braucht seine Zeit um sich an das Zeichnen mit einem Grafiktablett zu gewöhnen.<br />
+                                        Also heisst es üben, üben, üben!
+                                    </p>
+                                    
                                 </div>
                                 
-                                <div class="slidesectionright">
-                                    <p>right2</p>
-                                </div>
                             </section>
                            
                         </div>
@@ -69,18 +88,21 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script>
         Reveal.initialize({
-            controls: false,
+           controls: false,
             progress: false,
             embedded: true,
             center: true,
             minScale: 1.0,
             maxScale: 1.0,
-            autoSlide: 3000,
-            autoSlideStoppable: false,
             margin: 0,
-            width: "100%",
+            autoSlideStoppable: false,
+            autoSlide: 6000,
+            width: '100%',
+            height: '100%',
+            touch: true,
             loop: true,
-            touch: true
+            transition: Reveal.getQueryHash().transition || 'default', 
+            transitionSpeed: 'default'
  
             
         });  

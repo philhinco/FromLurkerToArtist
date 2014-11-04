@@ -35,24 +35,40 @@
                     <div class="reveal">
                         <div class="slides">
                             <section>
-                                <img class="" src="media/test_snk.jpg"/>
+                                <img class="" src="media/paper.JPG"/>
                                 <div class="slidesectionright">
-                                    <p>Papier, obviously!</p>
-                                    <p>Das Papier ist deine Zeichenwelt in der du deiner Fantasie freien Lauf lassen kannst!</p>
+                                    <p class="title">Papier und Stift!</p>
+                                    <p>
+                                        Das ist der einfachste Weg um zu zeichnen.                                       </p>
+                                    <p>
+                                        Schnapp dir einen Bleistift, ein Blatt Papier und einen Radierer. Denk dir etwas aus oder finde ein Referenzbild.
+                                    </p>
+                                    
+                                    <p>
+                                        Dann leg einfach los. Es muss kein Meisterwerk werden!
+                                    </p>
                                     
                                 </div>
                                 
                             </section>
                             
                             <section>
-                                <div class="slidesectionleft">
-                                    <p>Stift, obviously!</p>
-                                    <p>Mit dem Stift bringst du deine Ideen zu Papier!</p>
+                                <img class="" src="media/testimg.png"/>
+                                <div class="slidesectionright">
+                                    <p class="title">Zeichenpapier, professionelere Stifte</p>
+                                    <p>
+                                        Vielleicht hast du zuvor einfach das Papier deines Druckers benutzt. Holl dir Zeichenpapier aus deinem Detailhändler oder aus deiner Papeterie.
+                                    </p>
+                                    <p>
+                                        Du hast einfach den erstbesten Bleistift genommen? Schnapp dir eine Packung mit verschieden harten Stiften. 2B eignet sich im allgemeinen recht gut.
+                                    </p>
+                                    
+                                    <p>
+                                        Zeichne weiter. Versuch mit Hilfe von weicheren Bleistiften Schatten hinzuzufügen oder damit Haare einzufärben.
+                                    </p>
+                                    
                                 </div>
                                 
-                                <div class="slidesectionright">
-                                    <p>right</p>
-                                </div>
                             </section>
                            
                         </div>
@@ -75,11 +91,15 @@
             center: true,
             minScale: 1.0,
             maxScale: 1.0,
-            autoslide: 3000,
             margin: 0,
-            width: "100%",
+            autoSlideStoppable: false,
+            autoSlide: 6000,
+            width: '100%',
+            height: '100%',
             touch: true,
-            loop: true
+            loop: true,
+            transition:  Reveal.getQueryHash().transition || 'default', 
+            transitionSpeed: 'default'
  
             
         });  

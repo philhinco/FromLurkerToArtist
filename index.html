@@ -13,7 +13,6 @@
       <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
       <!--<![endif]-->
-            <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
   </head>
   <body class="background_clouds">
       <nav role="navigation" id="navigation" class="pure-menu pure-menu-open pure-menu-horizontal">
@@ -29,15 +28,25 @@
           <header id="header">
                 <h1>Zeichnen – von analog zu digital</h1>
           </header>
+          <div id="videowrapper">
+                    <div id="video">
+                        <iframe id="introplayer" src="http://player.vimeo.com/video/106529001?byline=0&portrait=0&color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
           <div id="contentwrapper">
             <div id="content">
-                <div id="video">
-                    <iframe id="introplayer" src="http://player.vimeo.com/video/106529001?api=1&player_id=introplayer&byline=0&portrait=0&color=ffffff" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
+                
                 
                 <section id="contenttext">
                     <p>
-                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                       Wir kennen es. Man sieht auf verschiedensten Social Media Platformen Bilder von oft sehr begabten Künstlern. Viele denken sich dann: "Das kann ich auch!". Oft weiss man dann aber nicht wie man überhaupt anfangen soll.
+                    </p>
+                    
+                    <p>
+                       Diese Seite soll dir helfen selbst zeichnerisch aktiv zu werden um danach von Papier und Stift hinzu digitalem Zeichnen zu kommen um später deine Werke mit anderen Leuten zu teilen.
+                    </p>
+                    <p>
+                       Klick dich durch die verschiedenen Seiten um einen Überblick zu erhalten.
                     </p>
                 </section>
             </div>
@@ -46,27 +55,6 @@
       
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">         </script>
-
-      
-      <script>
-        $(function() {
-            var content = $("#contenttext");
-            content.hide();
-           
-            var iframe = $('#introplayer')[0];
-            var player = $f(iframe);
-            var vidcontainer = $("#introplayer");
-   
-            player.addEvent('ready', function() {
-                player.addEvent('finish', onFinish);
-            });
-
-            function onFinish(id) {
-                vidcontainer.fadeOut();
-                content.fadeIn();
-            }
-        });
-      </script>
 
   </body>
 </html>
