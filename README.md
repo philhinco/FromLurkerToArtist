@@ -7,6 +7,7 @@ The work also has to be documented. This will be done in the docs/ folder.
 
 Frameworks used:
 
-* Twitter Bootstrap
+* PureCSS
 * jQuery
+* RevealJS
 
